@@ -1,3 +1,3 @@
 # TIL
 
-[twitter-clone](/tree/main/React/twitter-clone)
+[twitter-clone](/React/twitter-clone)
