@@ -2,7 +2,7 @@
 
 [ [getAuth docs link](https://firebase.google.com/docs/reference/js/auth?authuser=0#getauth) ]
 
-[ [currentUser docs link](https://firebase.google.com/docs/reference/js/auth.auth?authuser=0#authcurrentuser) ]
+[ [Auth.currentUser docs link](https://firebase.google.com/docs/reference/js/auth.auth?authuser=0#authcurrentuser) ]
 
 return 값이 User이면 로그인, null이면 로그아웃 된 상태
 
