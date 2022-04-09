@@ -2,11 +2,11 @@
 
 ## currentUser
 
-- [ [getAuth docs link](https://firebase.google.com/docs/reference/js/auth?authuser=0#getauth) ]
+[ [getAuth docs link](https://firebase.google.com/docs/reference/js/auth?authuser=0#getauth) ]
 
-- [ [Auth.currentUser docs link](https://firebase.google.com/docs/reference/js/auth.auth?authuser=0#authcurrentuser) ]
+[ [Auth.currentUser docs link](https://firebase.google.com/docs/reference/js/auth.auth?authuser=0#authcurrentuser) ]
 
-- return 값이 User이면 로그인, null이면 로그아웃 된 상태
+return 값이 User이면 로그인, null이면 로그아웃 된 상태
 
 ```jsx
 import { getAuth } from "firebase/auth";
@@ -18,9 +18,9 @@ getAuth().currentUser; // return User or null
 
 ## WithEmailAndPassword
 
-- [ [createUserWithEmailAndPassword docs link](https://firebase.google.com/docs/reference/js/auth.md?authuser=0#createuserwithemailandpassword) ]
+[ [createUserWithEmailAndPassword docs link](https://firebase.google.com/docs/reference/js/auth.md?authuser=0#createuserwithemailandpassword) ]
 
-- [ [signInWithEmailAndPassword docs link](https://firebase.google.com/docs/reference/js/auth.md?authuser=0#signinwithemailandpassword) ]
+[ [signInWithEmailAndPassword docs link](https://firebase.google.com/docs/reference/js/auth.md?authuser=0#signinwithemailandpassword) ]
 
 ```jsx
 import { getAuth } from "firebase/auth";
@@ -38,9 +38,9 @@ signInWithEmailAndPassword(getAuth(), email, password);
 
 ## Persistence
 
-- [ [setPersistence docs link](https://firebase.google.com/docs/reference/js/auth.md?authuser=0#setpersistence) ]
+[ [setPersistence docs link](https://firebase.google.com/docs/reference/js/auth.md?authuser=0#setpersistence) ]
 
-- [ [Persistence interface docs link](https://firebase.google.com/docs/reference/js/auth.persistence.md?authuser=0#properties) ]
+[ [Persistence interface docs link](https://firebase.google.com/docs/reference/js/auth.persistence.md?authuser=0#properties) ]
 
 ```jsx
 setPersistence();
