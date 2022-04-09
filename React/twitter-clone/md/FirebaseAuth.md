@@ -54,3 +54,23 @@ setPersistence();
 - `SESSION`: 탭이 열려있는 동안 사용자 정보 기억
 - `LOCAL`: 브라우저를 닫더라도 사용자 정보 기억
 - `NONE`: 기억하지 않음
+
+---
+
+## onAuthStateChanged
+
+[ [onAuthStateChanged docs link](https://firebase.google.com/docs/reference/js/auth.md?authuser=0#onauthstatechanged) ]
+
+```jsx
+const authService = getAuth()
+const [isLoggedIn, setIsLoggedIn] = useState(authService.currentUser);
+useEffect(() => {
+    onAuthStateChanged(authService, (user) => setIsLoggedIn(user));
+  }, []);
+// 파라미터:
+//   auth: Auth,
+//   nextOrObserver: NextOrObserver<User>,
+//   error?: ErrorFn,
+//   completed?: CompleteFn
+// 반환값: Unsubscribe
+```
