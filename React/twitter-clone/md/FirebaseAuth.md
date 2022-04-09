@@ -23,7 +23,11 @@ getAuth().currentUser; // return User or null
 [ [signInWithEmailAndPassword docs link](https://firebase.google.com/docs/reference/js/auth.md?authuser=0#signinwithemailandpassword) ]
 
 ```jsx
-import { getAuth } from "firebase/auth";
+import { 
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
 
 createUserWithEmailAndPassword(getAuth(), email, password);
 // 파라미터: auth: Auth, email: string, password: string
@@ -47,7 +51,6 @@ import {
   inMemoryPersistence
 } from "firebase/auth";
 
-
 setPersistence(getAuth(), inMemoryPersistence);
 // 파라미터: auth: Auth, persistence: Persistence
 // 반환값: Promise<void>
@@ -69,6 +72,11 @@ setPersistence(getAuth(), inMemoryPersistence);
 [ [onAuthStateChanged docs link](https://firebase.google.com/docs/reference/js/auth.md?authuser=0#onauthstatechanged) ]
 
 ```jsx
+import {
+  getAuth,
+  onAuthStateChanged,
+} from "firebase/auth";
+
 const authService = getAuth()
 const [isLoggedIn, setIsLoggedIn] = useState(authService.currentUser);
 useEffect(() => {
