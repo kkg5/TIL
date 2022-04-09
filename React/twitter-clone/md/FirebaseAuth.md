@@ -42,7 +42,7 @@ signInWithEmailAndPassword(getAuth(), email, password);
 
 ```jsx
 import {
- getAuth,
+  getAuth,
   setPersistence,
   inMemoryPersistence
 } from "firebase/auth";
