@@ -36,19 +36,26 @@ signInWithEmailAndPassword(getAuth(), email, password);
 
 ---
 
-## Persistence
+## setPersistence
 
 [ [setPersistence docs link](https://firebase.google.com/docs/reference/js/auth.md?authuser=0#setpersistence) ]
 
-[ [Persistence interface docs link](https://firebase.google.com/docs/reference/js/auth.persistence.md?authuser=0#properties) ]
-
 ```jsx
-setPersistence();
+import {
+ getAuth,
+  setPersistence,
+  inMemoryPersistence
+} from "firebase/auth";
+
+
+setPersistence(getAuth(), inMemoryPersistence);
 // 파라미터: auth: Auth, persistence: Persistence
 // 반환값: Promise<void>
 ```
 
-### Type of Persistence
+## Persistence.type
+
+[ [Persistence.type docs link](https://firebase.google.com/docs/reference/js/auth.persistence.md?authuser=0#properties) ]
 
 - React Native App과 앱 브라우저의 초기값은 `LOCAL`
 - `SESSION`: 탭이 열려있는 동안 사용자 정보 기억
