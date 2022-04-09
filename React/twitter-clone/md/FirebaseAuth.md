@@ -1,10 +1,12 @@
 # Firebase Auth
 
-[ [getAuth docs link](https://firebase.google.com/docs/reference/js/auth?authuser=0#getauth) ]
+## currentUser
 
-[ [Auth.currentUser docs link](https://firebase.google.com/docs/reference/js/auth.auth?authuser=0#authcurrentuser) ]
+- [ [getAuth docs link](https://firebase.google.com/docs/reference/js/auth?authuser=0#getauth) ]
 
-return 값이 User이면 로그인, null이면 로그아웃 된 상태
+- [ [Auth.currentUser docs link](https://firebase.google.com/docs/reference/js/auth.auth?authuser=0#authcurrentuser) ]
+
+- return 값이 User이면 로그인, null이면 로그아웃 된 상태
 
 ```jsx
 import { getAuth } from "firebase/auth";
@@ -12,6 +14,43 @@ import { getAuth } from "firebase/auth";
 getAuth().currentUser; // return User or null
 ```
 
-[ [createUserWithEmailAndPassword docs link](https://firebase.google.com/docs/reference/js/auth.md?authuser=0#createuserwithemailandpassword) ]
+---
 
-[ [Persistence interface docs link](https://firebase.google.com/docs/reference/js/auth.persistence.md?authuser=0#properties)]
+## WithEmailAndPassword docs link
+
+- [ [createUserWithEmailAndPassword docs link](https://firebase.google.com/docs/reference/js/auth.md?authuser=0#createuserwithemailandpassword) ]
+
+- [ [signInWithEmailAndPassword docs link](https://firebase.google.com/docs/reference/js/auth.md?authuser=0#signinwithemailandpassword) ]
+
+```jsx
+import { getAuth } from "firebase/auth";
+
+createUserWithEmailAndPassword(getAuth(), email, password);
+// 파라미터: auth: Auth, email: string, password: string
+// 반환값: Promise<UserCredential>;
+
+signInWithEmailAndPassword(getAuth(), email, password);
+// 파라미터: auth: Auth, email: string, password: string
+// 반환값: Promise<UserCredential>;
+```
+
+---
+
+## Persistence
+
+- [ [setPersistence docs link](https://firebase.google.com/docs/reference/js/auth.md?authuser=0#setpersistence) ]
+
+- [ [Persistence interface docs link](https://firebase.google.com/docs/reference/js/auth.persistence.md?authuser=0#properties) ]
+
+```jsx
+setPersistence();
+// 파라미터: auth: Auth, persistence: Persistence
+// 반환값: Promise<void>
+```
+
+### Type of Persistence
+
+- React Native App과 앱 브라우저의 초기값은 `LOCAL`
+- `SESSION`: 탭이 열려있는 동안 사용자 정보 기억
+- `LOCAL`: 브라우저를 닫더라도 사용자 정보 기억
+- `NONE`: 기억하지 않음
