@@ -11,3 +11,7 @@ import { getAuth } from "firebase/auth";
 
 getAuth().currentUser; // return User or null
 ```
+
+[ [createUserWithEmailAndPassword docs link](https://firebase.google.com/docs/reference/js/auth.md?authuser=0#createuserwithemailandpassword) ]
+
+[ [Persistence interface docs link](https://firebase.google.com/docs/reference/js/auth.persistence.md?authuser=0#properties)]
