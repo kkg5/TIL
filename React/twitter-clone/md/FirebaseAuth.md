@@ -16,7 +16,7 @@ getAuth().currentUser; // return User or null
 
 ---
 
-## WithEmailAndPassword docs link
+## WithEmailAndPassword
 
 - [ [createUserWithEmailAndPassword docs link](https://firebase.google.com/docs/reference/js/auth.md?authuser=0#createuserwithemailandpassword) ]
 
