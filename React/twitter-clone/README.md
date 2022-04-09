@@ -8,10 +8,10 @@
 
 ## 2022-04-09
 
-- [Firebase Auth / WithEmailAndPassword](https://github.com/kkg5/TIL/blob/main/React/twitter-clone/md/FirebaseAuth.md#WithEmailAndPassword)
+- [Firebase Auth / WithEmailAndPassword](https://github.com/kkg5/TIL/blob/main/React/twitter-clone/md/FirebaseAuth.md#withemailandpassword)
 
-- [Firebase Auth / setPersistence](https://github.com/kkg5/TIL/blob/main/React/twitter-clone/md/FirebaseAuth.md#setPersistence)
+- [Firebase Auth / setPersistence](https://github.com/kkg5/TIL/blob/main/React/twitter-clone/md/FirebaseAuth.md#setpersistence)
   
-- [Firebase Auth / Persistence.type](https://github.com/kkg5/TIL/blob/main/React/twitter-clone/md/FirebaseAuth.md#Persistence.type)
+- [Firebase Auth / Persistence.type](https://github.com/kkg5/TIL/blob/main/React/twitter-clone/md/FirebaseAuth.md#persistencetype)
   
-- [Firebase Auth / onAuthStateChanged](https://github.com/kkg5/TIL/blob/main/React/twitter-clone/md/FirebaseAuth.md#onAuthStateChanged)
+- [Firebase Auth / onAuthStateChanged](https://github.com/kkg5/TIL/blob/main/React/twitter-clone/md/FirebaseAuth.md#onauthstatechanged)
