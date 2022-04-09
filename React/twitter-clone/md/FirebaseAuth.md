@@ -116,3 +116,13 @@ const onSocialClick = async (event) => {
     await signInWithPopup(authService, provider);
   };
 ```
+
+## signOut
+
+[ [signOut docs link](https://firebase.google.com/docs/reference/js/auth?authuser=0#signout) ]
+
+```jsx
+import { getAuth, signOut } from "firebase/auth";
+
+const onLogOutClick = () => signOut(getAuth());
+```

@@ -19,3 +19,5 @@
 ## 2022-04-10
 
 - [Firebase Auth / AuthProvider](https://github.com/kkg5/TIL/blob/main/React/twitter-clone/md/FirebaseAuth.md#authprovider)
+
+- [Firebase Auth / signOut](https://github.com/kkg5/TIL/blob/main/React/twitter-clone/md/FirebaseAuth.md#signout)
