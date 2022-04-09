@@ -15,3 +15,7 @@
 - [Firebase Auth / Persistence.type](https://github.com/kkg5/TIL/blob/main/React/twitter-clone/md/FirebaseAuth.md#persistencetype)
   
 - [Firebase Auth / onAuthStateChanged](https://github.com/kkg5/TIL/blob/main/React/twitter-clone/md/FirebaseAuth.md#onauthstatechanged)
+
+## 2022-04-10
+
+- [Firebase Auth / AuthProvider](https://github.com/kkg5/TIL/blob/main/React/twitter-clone/md/FirebaseAuth.md#authprovider)

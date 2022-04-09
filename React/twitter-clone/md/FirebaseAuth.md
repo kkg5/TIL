@@ -81,3 +81,30 @@ useEffect(() => {
 //   completed?: CompleteFn
 // 반환값: Unsubscribe
 ```
+
+## AuthProvider
+
+[ [GoogleAuthProvider docs link](https://firebase.google.com/docs/reference/js/auth.googleauthprovider) ]
+
+[ [GithubAuthProvider docs link](https://firebase.google.com/docs/reference/js/auth.githubauthprovider) ]
+
+```jsx
+import {
+  GithubAuthProvider,
+  GoogleAuthProvider,
+  signInWithPopup,
+} from "firebase/auth";
+
+const onSocialClick = async (event) => {
+    const {
+      target: { name },
+    } = event;
+    let provider;
+    if (name === "google") {
+      provider = new GoogleAuthProvider();
+    } else if (name === "github") {
+      provider = new GithubAuthProvider();
+    }
+    await signInWithPopup(authService, provider);
+  };
+```
