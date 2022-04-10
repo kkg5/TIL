@@ -2,7 +2,7 @@
 
 ## 2022-04-07
 
-- [Absolute Imports](https://github.com/kkg5/TIL/blob/main/React/twitter-clone/md/AbsoluteImports.md)
+- [Absolute Imports](https://github.com/kkg5/TIL/blob/main/React/twitter-clone/md/AbsoluteImports.md#absolute-imports)
 
 - [Firebase Auth / currentuser](https://github.com/kkg5/TIL/blob/main/React/twitter-clone/md/FirebaseAuth.md#currentuser)
 
