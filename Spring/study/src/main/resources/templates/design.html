@@ -35,7 +35,7 @@
             </div>
 
             <div class="ingredient-group" id="cheeses">
-                <h3>Pick your cheese!</h3>
+                <h3>Choose your cheese!</h3>
 
                 <div th:each="ingredient : ${cheese}">
                     <input name="ingredients" type="checkbox" th:value="${ingredient.id}"/>
@@ -44,7 +44,7 @@
             </div>
 
             <div class="ingredient-group" id="veggies">
-                <h3>Pick your veggies!</h3>
+                <h3>Determine your veggies!</h3>
 
                 <div th:each="ingredient : ${veggies}">
                     <input name="ingredients" type="checkbox" th:value="${ingredient.id}"/>
@@ -53,7 +53,7 @@
             </div>
 
             <div class="ingredient-group" id="sauces">
-            <h3>Pick your sauce!</h3>
+            <h3>Select your sauce!</h3>
 
             <div th:each="ingredient : ${sauce}">
                 <input name="ingredients" type="checkbox" th:value="${ingredient.id}"/>
