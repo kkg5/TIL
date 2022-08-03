@@ -6,4 +6,4 @@
 
 ## 공부 기록
 
-[공부 기록](https://kkg0.tistory.com/category/TIL)
+[부트캠프 공부 기록](https://kkg0.tistory.com/category/Bootcamp)
